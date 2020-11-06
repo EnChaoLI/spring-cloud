@@ -6,9 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author Yang Hao
+ * @author enchaolee
  * @description 消费者只关心微服务名称.
- * @date 2020-09-14 16:54
+ * @date 2020-11-05 10:20 2020-09-14 16:54
  */
 @Configuration
 public class ApplicationContextConfig {

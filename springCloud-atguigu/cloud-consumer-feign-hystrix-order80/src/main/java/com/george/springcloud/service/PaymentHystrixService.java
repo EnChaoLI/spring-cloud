@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 /**
- * @author Yang Hao
+ * @author enchaolee
  * @description
- * @date 2020-09-16 16:38
+ * @date 2020-11-05 10:20 2020-09-16 16:38
  */
 @Component
 @FeignClient(value = "CLOUD-PROVIDER-HYSTRIX-PAYMENT", fallback = PaymentFallbackService.class)

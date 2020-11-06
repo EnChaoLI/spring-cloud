@@ -4,9 +4,9 @@ import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.george.springcloud.entities.CommonResult;
 
 /**
- * @author Yang Hao
+ * @author enchaolee
  * 创建customerBlockHandler类用于自定义限流处理逻辑
- * @date 2020-09-23 17:20
+ * @date 2020-11-05 10:20 2020-09-23 17:20
  */
 public class CustomerBlockHandler {
 

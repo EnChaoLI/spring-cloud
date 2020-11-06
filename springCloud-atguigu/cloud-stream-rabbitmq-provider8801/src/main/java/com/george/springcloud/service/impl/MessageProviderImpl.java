@@ -12,11 +12,11 @@ import javax.annotation.Resource;
 import java.util.UUID;
 
 /**
- * @author Yang Hao
+ * @author enchaolee
  * @EnableBinding 注解是绑定channel和exchange绑定在一起
  * Source 定义消息的推送管道
  * 官网案例 https://cloud.spring.io/spring-cloud-static/spring-cloud-stream-binder-rabbit/3.0.1.RELEASE/reference/html/spring-cloud-stream-binder-rabbit.html
- * @date 2020-09-21 15:33
+ * @date 2020-11-05 10:20 2020-09-21 15:33
  */
 @EnableBinding(Source.class)
 @Slf4j

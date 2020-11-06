@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author Yang Hao
+ * @author enchaolee
  * @description
- * @date 2020-09-22 10:32
+ * @date 2020-11-05 10:20 2020-09-22 10:32
  */
 @RestController
 @RefreshScope   //通过SpringCloud原生注解 @RefreshScope 实现配置自动更新

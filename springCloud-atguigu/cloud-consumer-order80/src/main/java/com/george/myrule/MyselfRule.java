@@ -7,15 +7,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author Yang Hao
+ * @author enchaolee
  * @description Ribbon自定义IRule规则
- * @date 2020-09-16 14:24
+ * @date 2020-11-05 10:20 2020-09-16 14:24
  */
 @Configuration
 public class MyselfRule {
 
     @Bean
     public IRule myRule() {
-        return new RetryRule();
+        return new RandomRule();
     }
 }

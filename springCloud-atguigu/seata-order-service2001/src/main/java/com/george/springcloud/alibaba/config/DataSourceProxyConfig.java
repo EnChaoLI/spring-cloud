@@ -18,7 +18,7 @@ import javax.sql.DataSource;
  * 使用seata对数据源进行代理
  *
  * @author Yang Hao
- * @date 2020-09-27 11:49
+ * @date 2020-11-05 10:20 2020-09-27 11:49
  */
 @Configuration
 public class DataSourceProxyConfig {

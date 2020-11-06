@@ -3,9 +3,9 @@ package com.george.springcloud.service;
 import org.springframework.stereotype.Component;
 
 /**
- * @author Yang Hao
+ * @author enchaolee
  * @description
- * @date 2020-09-16 16:38
+ * @date 2020-11-05 10:20 2020-09-16 16:38
  */
 @Component
 public class PaymentFallbackService implements PaymentHystrixService {

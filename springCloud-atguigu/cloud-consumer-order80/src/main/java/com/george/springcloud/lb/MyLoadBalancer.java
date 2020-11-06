@@ -5,9 +5,9 @@ import org.springframework.cloud.client.ServiceInstance;
 import java.util.List;
 
 /**
- * @author Yang Hao
+ * @author enchaolee
  * @description
- * @date 2020-09-16 14:58
+ * @date 2020-11-05 10:20 2020-09-16 14:58
  */
 public interface MyLoadBalancer {
 

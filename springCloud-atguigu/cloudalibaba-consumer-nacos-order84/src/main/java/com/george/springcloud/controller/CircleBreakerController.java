@@ -14,8 +14,8 @@ import org.springframework.web.client.RestTemplate;
 import javax.annotation.Resource;
 
 /**
- * @author Yang Hao
- * @date 2020-09-24 09:35
+ * @author enchaolee
+ * @date 2020-11-05 10:20 2020-09-24 09:35
  */
 @RestController
 public class CircleBreakerController {
