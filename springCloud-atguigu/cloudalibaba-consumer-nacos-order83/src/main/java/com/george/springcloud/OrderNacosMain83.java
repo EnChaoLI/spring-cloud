@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * @author enchaolee
  * @description
- * @date 2020-11-05 10:20 2020-09-21 20:58
+ *   10:20 2020-09-21 20:58
  */
 @EnableDiscoveryClient
 @SpringBootApplication

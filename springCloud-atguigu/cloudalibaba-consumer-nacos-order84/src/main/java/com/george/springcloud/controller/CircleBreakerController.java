@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 
 /**
  * @author enchaolee
- * @date 2020-11-05 10:20 2020-09-24 09:35
+ *   10:20 2020-09-24 09:35
  */
 @RestController
 public class CircleBreakerController {

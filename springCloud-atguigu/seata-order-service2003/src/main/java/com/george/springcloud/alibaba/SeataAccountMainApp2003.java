@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author enchaolee
- * @date 2020-11-05 10:20 2020-09-27 11:58
+ *   10:20 2020-09-27 11:58
  */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class) //取消数据源的自动装配,使用自己的数据源
 @EnableDiscoveryClient

@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * @author enchaolee
  * @description
- * @date 2020-11-05 10:20 2020-09-15 17:29
+ *   10:20 2020-09-15 17:29
  */
 @SpringBootApplication
 @EnableDiscoveryClient //该注解用于向使用consul或者zookeeper作为注册中心时注册服务

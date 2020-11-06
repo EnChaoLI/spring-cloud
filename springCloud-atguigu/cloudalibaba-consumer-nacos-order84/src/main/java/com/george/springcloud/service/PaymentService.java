@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  * @author enchaolee
- * @date 2020-11-05 10:20 2020-09-24 09:35
+ *   10:20 2020-09-24 09:35
  */
 @FeignClient(value = "nacos-payment-provider", fallback = PaymentFallbackServiceImpl.class)
 public interface PaymentService {

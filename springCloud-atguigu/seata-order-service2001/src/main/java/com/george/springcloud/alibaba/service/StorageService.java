@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author enchaolee
- * @date 2020-11-05 10:20 2020-09-27 11:33
+ *   10:20 2020-09-27 11:33
  */
 @FeignClient(value = "seata-storage-service")
 public interface StorageService {
