@@ -16,10 +16,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class BootApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext applicationContext = SpringApplication.run(BootApplication.class, args);
+
+        SpringApplication.run(BootApplication.class, args);
+     /*   ConfigurableApplicationContext applicationContext = SpringApplication.run(BootApplication.class, args);
         AliyunSmsSenderImpl aliyunSmsSender = applicationContext.getBean(AliyunSmsSenderImpl.class);
         aliyunSmsSender.send("用阿里云发送短信");
         TencentSmsSenderImpl tencentSmsSender = applicationContext.getBean(TencentSmsSenderImpl.class);
-        tencentSmsSender.send("用腾讯云发送短信");
+        tencentSmsSender.send("用腾讯云发送短信");*/
     }
 }
