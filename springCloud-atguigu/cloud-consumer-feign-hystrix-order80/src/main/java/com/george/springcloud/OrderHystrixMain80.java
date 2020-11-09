@@ -7,7 +7,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author enchaolee
- * @description
  */
 @SpringBootApplication
 @EnableFeignClients

@@ -4,7 +4,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author enchaolee
- * @description
  */
 @Component
 public class PaymentFallbackService implements PaymentHystrixService {
