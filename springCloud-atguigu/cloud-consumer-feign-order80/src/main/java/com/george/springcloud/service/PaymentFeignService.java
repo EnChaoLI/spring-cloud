@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 /**
  * @author enchaolee
  * @description
- *   10:20 2020-09-16 16:39
  */
 @Component
 @FeignClient(value = "CLOUD-PAYMENT-SERVICE")

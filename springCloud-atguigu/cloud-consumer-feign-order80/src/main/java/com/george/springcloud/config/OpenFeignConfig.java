@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author enchaolee
  * @description
- *   10:20 2020-09-16 17:11
  */
 @Configuration
 public class OpenFeignConfig {
