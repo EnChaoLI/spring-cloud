@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigClientController {
 
-    @Value("${server.port}")
-    private String configInfo;
+    @Value("${quartz.status}")
+    private  String configInfo;
 
     @GetMapping("/configInfo")
     public String getConfigInfo() {
