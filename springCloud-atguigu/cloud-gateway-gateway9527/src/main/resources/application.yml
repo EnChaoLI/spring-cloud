@@ -44,6 +44,9 @@ spring:
             # - After=2020-11-11T11:16:15.204+08:00[Asia/Shanghai] # 此时间之后才可访问
             # - Cookie=username,zzyy #只有cookie包含username,并且value是zzyy的才可以路由
             # - Header-X-Request-Id,|d+ #只有包含指定请求头的请求才可以路由
+            # - Method=Get #　指定的请求方式才会路由
+            # - Host=**.baidu.com #只有指定主机的才可以访问
+            # - Query=username,\d+ # 要有参数名username，并且值必须是整数才可以路由
         - id: payment_routh2
           uri: lb://cloud-payment-service
           predicates:
