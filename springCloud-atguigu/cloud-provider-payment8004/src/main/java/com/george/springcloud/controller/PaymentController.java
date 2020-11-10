@@ -9,8 +9,6 @@ import java.util.UUID;
 
 /**
  * @author enchaolee
- * @description
- *   10:20 2020-09-15 17:32
  */
 @RestController
 @Slf4j

@@ -11,8 +11,6 @@ import javax.annotation.Resource;
 
 /**
  * @author enchaolee
- * @description
- *   10:20 2020-09-14 16:10
  */
 @RestController
 @Slf4j

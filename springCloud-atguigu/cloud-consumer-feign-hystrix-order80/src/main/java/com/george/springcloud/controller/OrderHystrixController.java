@@ -3,6 +3,7 @@ package com.george.springcloud.controller;
 import com.george.springcloud.service.PaymentHystrixService;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,11 +28,12 @@ public class OrderHystrixController {
         return result;
     }
 
-//    @GetMapping("/consumer/payment/hystrix/timeout/{id}")
-//    public String paymentInfo_TimeOut(@PathVariable("id") Integer id){
-//        String result = paymentHystrixService.paymentInfo_TimeOut(id);
-//        return result;
-//    }
+    @GetMapping("/consumer/payment/hystrix/global/timeout/{id}")
+    @HystrixCommand //参考全局降级方法注释,payment_Global_FallbackMethod
+    public String paymentInfo_TimeOut_By_Global(@PathVariable("id") Integer id){
+        String result = paymentHystrixService.paymentInfo_TimeOut(id);
+        return result;
+    }
 
     /**
      * 每一个方法都需要配置降级方法??? 代码冗余.需要一个通用的
@@ -40,12 +42,17 @@ public class OrderHystrixController {
      * @return
      */
     @GetMapping("/consumer/payment/hystrix/timeout/{id}")
-//    @HystrixCommand(fallbackMethod = "PaymentTimeOutFallbackMethod", commandProperties = {
-//            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "1500")
-//    })
-    @HystrixCommand //参考全局降级方法注释,payment_Global_FallbackMethod
+    @HystrixCommand(fallbackMethod = "PaymentTimeOutFallbackMethod", commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "1500")
+    })
+
     public String paymentInfo_TimeOut(@PathVariable("id") Integer id) {
-        int age = 10 / 0;
+        int age = 10 / 2;
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         String result = paymentHystrixService.paymentInfo_TimeOut(id);
         return result;
     }
