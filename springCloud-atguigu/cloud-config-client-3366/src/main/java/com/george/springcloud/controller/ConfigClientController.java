@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author enchaolee
- * @description
- *   10:20 2020-09-20 09:20
  */
 @RestController
 @Slf4j

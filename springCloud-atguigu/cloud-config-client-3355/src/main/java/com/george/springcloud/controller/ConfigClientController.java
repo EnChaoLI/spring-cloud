@@ -8,15 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author enchaolee
- * @description
- *   10:20 2020-09-19 14:29
  */
 @RestController
 @Slf4j
 @RefreshScope
 public class ConfigClientController {
 
-    @Value("${config.info}")
+    @Value("${server.port}")
     private String configInfo;
 
     @GetMapping("/configInfo")
