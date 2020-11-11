@@ -18,7 +18,7 @@ public class ConfigClientController {
 
     @PostMapping("/configInfo")
     public void getConfigInfo() {
-        System.out.println("==============github push 回调测试成功===========");
+        System.out.println("===============github push 回调测试成功===========");
     }
 
 }
