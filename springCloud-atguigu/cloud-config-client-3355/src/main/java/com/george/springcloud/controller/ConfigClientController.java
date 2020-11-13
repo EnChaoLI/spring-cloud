@@ -19,6 +19,7 @@ public class ConfigClientController {
 
     @GetMapping("/configInfo")
     public String getConfigInfo() {
+        System.out.println("========访问3355=======");
         return configInfo;
     }
 
