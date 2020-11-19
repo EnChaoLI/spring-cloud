@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 /**
  * @author enchaolee
  * @description 消费者
- *   10:20 2020-09-21 15:32
  */
 @Component
 @Slf4j

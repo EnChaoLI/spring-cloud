@@ -11,12 +11,17 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:EnChaoLI/springcloud-config.git #github上仓库地址
-          search-paths:
-            # 搜索目录
-            - springcoud-config
+          uri: https://github.com/EnChaoLI/springcloud-config.git #github上仓库地址,注意这里必须用http
+          force-pull: true #设置强行pull拉取
+          username: 1159686526@qq.com
+          password: lec727209
       #读取分支
       label: master
+  rabbitmq:
+      host: 119.3.156.243
+      port: 5672
+      username: abc
+      password: 123456
 
 #服务注册到Eureka地址
 eureka:
@@ -24,8 +29,6 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com/eureka
 
-#3366 需要.
-# rabbitmq 相关配置,暴露bus刷新配置的断点
 management:
   endpoints: #暴露bus刷新配置的断点
     web:
